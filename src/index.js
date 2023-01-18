@@ -4,7 +4,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import "./styles/index.css"
-import init from "./api/firebase";
+import "./styles/Auth.css"
+import "./styles/Home.css"
+import "./styles/Anime.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

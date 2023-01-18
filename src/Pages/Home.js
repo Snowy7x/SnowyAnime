@@ -1,5 +1,4 @@
 import {Button, Card, Container, Spacer, Text} from "@nextui-org/react";
-import "../styles/Home.css"
 import {AHorizontalCard, HorizontalCard, VerticalCard} from "../Components/AnimeCards";
 import Latest from "../Components/Latest"
 import Carousel from "react-multi-carousel";

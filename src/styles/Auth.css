@@ -4,26 +4,26 @@
 }
 
 .sign_card {
-    width: fit-content;
-    flex-direction: row-reverse;
-    height: 100%;
-    background-color: #0e0e10;
+    width: fit-content !important;
+    flex-direction: row-reverse  !important;
+    height: 100% !important;
+    background-color: #0e0e10 !important;
 }
 
 .sign_img_container {
-    width: 50%;
+    width: 50% !important;
     border-radius: 20px;
 }
 
 .sign_img_container img {
-    width: auto;
-    max-height: 100vh;
+    width: auto !important;
+    max-height: 100vh !important;
     border-radius: 20px;
 }
 
 .sign_form {
-    width: 50%;
-    height: 100%;
+    width: 50% !important;
+    height: 100% !important;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -32,30 +32,30 @@
 
 @media screen and (max-width: 1250px) {
     .sign_card {
-        width: fit-content;
-        flex-direction: column;
-        height: 100%;
-        background-color: #0e0e10;
+        width: fit-content !important;
+        flex-direction: column  !important;
+        height: 100% !important;
+        background-color: #0e0e10 !important;
     }
 
     .sign_img_container {
-        max-height: 50vh;
+        max-height: 50vh !important;
     }
 
     .sign_img_container, .sign_form {
-        width: 100%;
+        width: 100% !important;
     }
 }
 
 @media screen and (max-width: 450px) {
     .sign_img_container {
-        max-height: 80vw;
+        max-height: 80vw !important;
     }
     .sign_img_container img{
         object-fit: cover;
         object-position: center;
     }
     .sign_card {
-        margin: 10px;
+        margin: 10px !important;
     }
 }

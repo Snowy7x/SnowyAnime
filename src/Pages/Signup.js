@@ -1,4 +1,3 @@
-import "../styles/Auth.css"
 import {Button, Card, Input, Loading, Spacer, Text} from "@nextui-org/react";
 import {useEffect, useRef, useState} from "react";
 import {useAuth} from "../contexts/AuthContext";

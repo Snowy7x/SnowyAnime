@@ -1,7 +1,5 @@
-import "../styles/Home.css"
 import {useHistory, useParams} from "react-router-dom";
 import {Button, Card, Checkbox, Input, Loading, Modal, Spacer, Text} from "@nextui-org/react";
-import "../styles/Anime.css"
 import {useEffect, useState} from "react";
 import {getAnime} from "../api";
 import {HeartIcon} from "./Home";

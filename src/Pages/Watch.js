@@ -1,6 +1,4 @@
 import {Button, Card, Container, Dropdown, Input, Loading, Modal, Spacer, Text} from "@nextui-org/react";
-import "../styles/Home.css"
-import "../styles/Anime.css"
 import Player from 'griffith'
 import {useHistory, useParams} from "react-router-dom";
 import {useEffect, useMemo, useState} from "react";
@@ -110,7 +108,7 @@ function Watch(){
                     <div className="cover_img" style={{
                     backgroundImage: `linear-gradient(to right, rgba(255,255,255,0) 20%, rgba(255,255,255,1)), url(${anime.anime_banner_image_url ?? anime.anime_cover_image_url})`
                 }}/>
-                    <Button onClick={() => {
+                    <Button className="anime_title" onClick={() => {
                         history.push("/anime/" + anime.anime_id)
                     }} color="gradient" ghost auto css={{width: "fit-content", fontSize: "$md"}}>{anime.anime_name + " - " + episode.episode_name}</Button>
                     <Spacer y={1}/>

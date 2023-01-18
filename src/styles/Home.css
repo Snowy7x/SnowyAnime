@@ -1,12 +1,12 @@
 .watch_hero, .hero {
-    width: 100%;
+    width: 100% !important;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row  !important;
+    justify-content: space-between  !important;
 }
 
 .hero {
-    max-width: 1600px;
+    max-width: 1600px !important;
 }
 
 .watch_hero *, .hero *{
@@ -14,7 +14,7 @@
 }
 
 .watch_hero .btn_container, .hero .btn_container{
-    width: 20vw;
+    width: 20vw !important;
     display: flex;
     justify-content: space-between;
 }
@@ -28,19 +28,19 @@
 }
 
 .main_card {
-    width: calc(100vw - 45vw);
-    height: fit-content;
+    width: calc(100vw - 45vw) !important;
+    height: fit-content !important;
 }
 
 .hero_img {
-    min-width: 100%;
+    min-width: 100% !important;
 }
 
 .hero_img img {
     object-fit: contain;
     flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
+    min-width: 100% !important;
+    min-height: 100% !important
 }
 
 @media screen and (max-width: 1600px){
@@ -51,21 +51,21 @@
 
 @media screen and (max-width: 1400px){
     .hero {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .hero .main_card, .mobile_hero .main_card  {
-        width: 95%;
+        width: 95% !important;
     }
 }
 
 @media screen and (max-width: 1200px){
     .watch_hero {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .watch_hero .main_card  {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100% !important;
+        margin-bottom: 20px !important;
     }
 }
