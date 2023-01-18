@@ -1,0 +1,71 @@
+.watch_hero, .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero {
+    max-width: 1600px;
+}
+
+.watch_hero *, .hero *{
+    text-align: start !important;
+}
+
+.watch_hero .btn_container, .hero .btn_container{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.main_card {
+    width: calc(100vw - 45vw);
+    height: fit-content;
+}
+
+.hero_img {
+    min-width: 100%;
+}
+
+.hero_img img {
+    object-fit: contain;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+@media screen and (max-width: 1600px){
+    .hero {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .main_card, .mobile_hero .main_card  {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .watch_hero {
+        flex-direction: column;
+    }
+
+    .watch_hero .main_card  {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

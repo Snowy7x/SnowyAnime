@@ -1,0 +1,72 @@
+.container {
+    width: 100% !important;
+}
+.desc_container{
+    max-width: 60%;
+    z-index: 2;
+}
+.details_container {
+    z-index: 2;
+}
+
+.genres{
+    width: 100%;
+}
+.genres button {
+    margin: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.anime_desc {
+    display: block;
+}
+
+@media screen and (max-width: 850px) {
+    .anime_desc {
+        display: none;
+    }
+
+    .anime_container {
+        flex-direction: column-reverse !important;
+    }
+
+    .desc_container {
+        max-width: 100%;
+    }
+
+    .details_container .w_card {
+        padding: 0 !important;
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+        max-width: fit-content;
+    }
+
+    .details_container .w_card img {
+        margin: 0;
+        width: 100%;
+        min-height: 250px;
+    }
+
+
+    .details_container {
+        padding: 0;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .details_container{
+        margin-top: 20px;
+    }
+
+    .desc_container .row:nth-child(2) {
+        margin: 5px 0;
+    }
+}
+
